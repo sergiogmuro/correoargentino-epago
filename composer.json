@@ -1,0 +1,31 @@
+{
+  "name": "sergiomuro/correoargentino-epago",
+  "type": "library",
+  "description": "SDK for Correo Argentino epago platform",
+  "require": {
+    "php": ">=7.0",
+    "ext-curl": "*"
+  },
+  "minimum-stability": "dev",
+  "version": "0.1.1",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "sergiomuro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CorreoArgentinoApi\\": "src/CorreoArgentinoEpago"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "2.x-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true
+}
