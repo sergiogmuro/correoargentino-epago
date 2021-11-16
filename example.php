@@ -19,6 +19,8 @@ $epago = new CorreoArgentinoEpago('my_email@example.com', 'myPassword');
 print_r($epago->rubros());
 //// My packages informed
 print_r($epago->me());
+//// Inform the package
+print_r($epago->inform('AB123456789CD', 'John', 'Doe'));
 //// Track the packages
 print_r($epago->track('AB123456789TS'));
 

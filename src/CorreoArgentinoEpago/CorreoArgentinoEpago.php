@@ -70,6 +70,27 @@ class CorreoArgentinoEpago extends AbstractCorreoArgentinoEpago
     }
 
     /**
+     * Inform an international buy with an international tracking number
+     *
+     * @param string $partId
+     * @param string $firstname
+     * @param string $lastname
+     *
+     * @return array
+     */
+    public function inform(string $partId, string $firstname, string $lastname): array
+    {
+        $url = self::BASE_URL . self::API_URL_INFORM_BUY;
+        $params = [
+            "pieza_id" => $partId,
+            "acepto_tyc" => true,
+            "nombre" => ucwords($firstname),
+            "apellido" => ucwords($lastname)
+        ];
+        return $this->requestEpago($url, 'POST', $params);
+    }
+
+    /**
      * Declare items for tracking order
      *
      * @param Declaration $declaration

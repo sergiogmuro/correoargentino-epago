@@ -1,5 +1,5 @@
 # Correo Argentino Epago
-Api para consultas y gestion en Correo Argentino plataforma epago
+SDK para consultas y gestion en Correo Argentino plataforma epago
 
 ### Installation
 ```shell
@@ -23,6 +23,11 @@ print_r($epago->rubros());
 Get my packages inform
 ```php
 print_r($epago->me());
+```
+
+Inform an international buy with international tracking number
+```php
+print_r($epago->inform('AB123456789CD', 'John', 'Doe'));
 ```
 
 Track my inform package
@@ -52,3 +57,10 @@ for ($i = 0; $i < rand(1, 5); $i++) {
 // Declare
 print_r($epago->declaration($d));
 ```
+
+-----
+Ver tambien el proyecto [Track & Trace](https://github.com/sergiogmuro/correoargentino-api)
+
+> Usar bajo su propia responsabilidad.   
+> Teniendo en cuenta que este es un servicio gubernamiental y privado.   
+> El proyecto es de uso personal... 

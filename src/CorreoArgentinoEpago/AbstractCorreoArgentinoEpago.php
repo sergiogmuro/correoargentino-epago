@@ -11,6 +11,7 @@ abstract class AbstractCorreoArgentinoEpago extends AbstractCorreoArgentino
     const API_URL_TOKEN = '/oauth/token';
     const API_URL_ME = self::API_URL_BASE . '/me';
     const API_URL_TRACK = self::API_URL_BASE . '/get-seguimiento';
+    const API_URL_INFORM_BUY = self::API_URL_BASE . '/aviso-compra';
     const API_URL_STORE_DECLARE = self::API_URL_BASE . '/guardar-declarar';
     const API_URL_CATEGORIES = self::API_URL_BASE . '/general';
 
