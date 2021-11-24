@@ -31,6 +31,11 @@ abstract class AbstractCorreoArgentinoEpago extends AbstractCorreoArgentino
         self::$username = $username;
         self::$password = $password;
 
+        // Reset for multiple implementations
+        self::$headers = [
+            'Content-Type:application/json'
+        ];
+
         $this->getAccessToken();
     }
 
