@@ -16,7 +16,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "CorreoArgentinoApi\\": "src/CorreoArgentinoEpago"
+      "CorreoArgentinoEpago\\": "src/CorreoArgentinoEpago"
     }
   },
   "extra": {
